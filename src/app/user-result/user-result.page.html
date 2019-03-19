@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>UserResult</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{obtainedUserData.bio}}</ion-card-subtitle>
+      <ion-card-title>{{obtainedUserData.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-img [src]="obtainedUserData.avatar_url"></ion-img>
+  </ion-card>
+</ion-content>
